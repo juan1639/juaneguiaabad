@@ -1,0 +1,222 @@
+:root {
+  --blanco: rgb(240, 240, 240);
+  --azul-masclaro: rgb(82, 211, 216);
+  --azul-claro: rgb(56, 135, 190);
+  --azul-darkcyan: darkcyan;
+  --azul-royal: royalblue;
+  --azul-medio: rgb(56, 65, 157);
+  --azul-marino: rgb(32, 14, 58);
+  --letra-tituloXL: 40px;
+  --letra-grande: 28px;
+  --letra-normal: 24px;
+  --letra-mini: 20px;
+  --letra-responsive-tituloXL: 20px;
+  --letra-responsive-grande: 16px;
+  --letra-responsive-normal: 14px;
+  --letra-responsive-mini: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100vw;
+  height: fit-content;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: url('../img/fondo-azulOscuro.png');
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* ------------------------------------------------------------------ */
+.fa-caret-down {
+  animation: animaCarets 3s infinite;
+}
+
+h1 {
+  color: var(--azul-masclaro);
+  font-size: var(--letra-tituloXL);
+}
+
+h2 {
+  cursor: pointer;
+}
+
+p {
+  color: var(--blanco);
+  font-size: var(--letra-normal);
+}
+
+a {
+  color: var(--azul-claro);
+  font-size: var(--letra-normal);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul li {
+  color: var(--azul-claro);
+  font-size: var(--letra-normal);
+  list-style: none;
+  display: inline-block;
+}
+
+summary:hover {
+  border: 2px solid var(--azul-claro);
+  border-radius: 5px;
+}
+
+footer figure img:hover {
+  transform: scale(1.2, 1.2);
+}
+
+h2:hover {
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent transparent var(--azul-masclaro) transparent;
+}
+
+@keyframes animaCarets {
+  0% {
+    transform: scale(1);
+    text-shadow: none;
+  }
+  50% {
+    transform: scale(1.5);
+    text-shadow: 1px 1px 9px var(--blanco);
+  }
+  100% {
+    transform: scale(1);
+    text-shadow: none;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+.header {
+  width: inherit;
+  height: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1em;
+}
+
+#contenedor-imagen-Juan {
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+  background-image: url('../img/fotoJuan.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header article {
+  width: fit-content;
+  padding: 1em;
+}
+
+.header article p {
+  font-size: var(--letra-grande);
+  margin-top: 0.8em;
+}
+
+.header article summary {
+  font-size: var(--letra-normal);
+  font-style: italic;
+  color: var(--azul-royal);
+  cursor: pointer;
+  margin-top: 0.5em;
+  padding: 0.2em 0.2em 0.2em 1em;
+}
+
+#sobremi {
+  max-width: 400px;
+  height: fit-content;
+  font-size: var(--letra-mini);
+  color: var(--azul-darkcyan);
+  padding-left: 1em;
+}
+
+/* ------------------------------------------------------------------ */
+.mis-lenguajes {
+  width: inherit;
+  height: fit-content;
+  /* border: 1px solid var(--azul-claro); */
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1em 1em;
+}
+
+/* ------------------------------------------------------------------ */
+.descripcion-mis-lenguajes {
+  padding: 1em 1em 0.4em 0.4em;
+  color: var(--azul-masclaro);
+}
+
+.h2-mis-lenguajes {
+  width: fit-content;
+}
+
+.contenedor-mis-lenguajes {
+  width: 99%;
+  height: 0;
+  border: 2px solid var(--azul-masclaro);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 1em;
+  overflow: hidden;
+  /* animation: mostrarLenguajes 7s 2; */
+  animation: none;
+}
+
+.contenedor-mis-lenguajes figure {
+  width: fit-content;
+  height: fit-content;
+}
+
+.contenedor-mis-lenguajes figure img {
+  width: 8vw;
+  height: 8vw;
+}
+
+@keyframes mostrarLenguajes {
+  0% {
+    height: 0vw;
+  }
+
+  50% {
+    height: 20vw;
+  }
+
+  100% {
+    height: 0vw;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+.footer {
+  width: inherit;
+  height: fit-content;
+  display: flex;
+  justify-content: space-evenly;
+  color: var(--azul-darkcyan);
+  background-color: var(--azul-marino);
+  padding: 2em 1em;
+}
+
+.footer figure img {
+  width: 5vw;
+  height: 5vw;
+  margin-left: 0.1em;
+}
