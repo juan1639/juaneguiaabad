@@ -1,20 +1,118 @@
-const contenedorMisLenguajes = document.getElementsByClassName('contenedor-mis-lenguajes');
-const mostrarLenguajes = document.getElementsByClassName('h2-mis-lenguajes');
+// =================================================================================
+//  Portfolio Juan Eguia
+// 
+// =================================================================================
+import { Settings } from './constants.js';
+// import { crearElementos_fetchingJson } from './fetching-iter.js';
 
-Array.from(mostrarLenguajes).forEach(opcion => {
+import {
+    carga_misLenguajes_imagenes,
+    cambiar_pestana_navbarProyectos,
+    ver_mas,
+    acciones_h2Carets,
+} from "./functions.js";
 
-    opcion.addEventListener('click', (ev) => {
+let settings;
 
-        console.log('click...');
+// =================================================================================
+//  Fetching info tarjetas proyectos
+//  
+// ---------------------------------------------------------------------------------
+/* const recibeInfo_proyectos = async () => {
 
-        Array.from(contenedorMisLenguajes)[0].style.animation = 'mostrarLenguajes 7s 1';
+    const endpoint = './json/proyectos.json';
 
-        setTimeout(() => {
-            console.log('activado');
-            Array.from(contenedorMisLenguajes)[0].style.animation = 'none';
-        }, 7000);
+    try {
+        const response = await fetch(endpoint, {cache: 'no-cache'});
+        console.log(response);
 
-        // console.log(Array.from(contenedorMisLenguajes)[0].style);
-        
+        if (response.ok) {
+            const jsonResponse = await response.json();
+            console.log(jsonResponse);
+
+            //funcion para mostrar la informacion
+            muestraResultados(jsonResponse);
+        }
+
+    } catch (error) {
+        console.log(error);
+    }
+} */
+
+// ----------------------------------------------------------------------------------
+/* const muestraResultados = (response) => {
+
+    console.log(response);
+
+    let contador = 999;
+    let opcionIndex = -1;
+    const navbar_opciones = Object.keys(response);
+
+    for (let opcionElegida of navbar_opciones) {
+
+        opcionIndex ++;
+
+        for (let i of response[opcionElegida]) {
+
+            contador --;
+
+            const tarjeta = crearElementos_fetchingJson(i, contador, opcionIndex);
+            settings.doms.contenedor_proyectos[opcionIndex].appendChild(tarjeta);
+            
+            tarjeta.addEventListener('click', (ev) => {
+                ver_mas(ev);
+            });
+        }
+    }
+    
+    opcion_proyectosPorDefecto();
+} */
+
+// =================================================================================
+/* function opcion_proyectosPorDefecto() {
+
+    const elementos = Array.from(settings.doms.navbar_proyectos);
+    const opciones = settings.valores_iniciales.navbar_proyectos;
+
+    for (let i = 0; i < elementos.length; i ++) {
+        if (opciones[i][1]) elementos[i].style.backgroundColor = 'var(--color12)';
+    }
+
+    settings.doms.iconos_lenguajes.style.transform = 'translateY(-49%) scale(1, 0.0)';
+    settings.doms.iconos_lenguajes.style.height = '2em';
+} */
+
+// =================================================================================
+window.onload = () => {
+
+    settings = new Settings();
+    // recibeInfo_proyectos();
+    // carga_misLenguajes_imagenes();
+
+    /* Array.from(settings.doms.navbar_proyectos).forEach(opcion => {
+
+        opcion.addEventListener('click', (ev) => {
+            cambiar_pestana_navbarProyectos(ev, opcion);
+        });
     });
-});
+
+    Array.from(settings.doms.carets).forEach((caret, index) => {
+
+        caret.addEventListener('click', (ev) => {
+            acciones_caretsAbajo(ev, index, caret);
+        });
+    }); */
+
+    console.log(Array.from(settings.doms.h2Carets));
+
+    Array.from(settings.doms.h2Click).forEach((h2Click, index) => {
+
+        console.log(h2Click);
+        
+        h2Click.addEventListener('click', (ev) => {
+            acciones_h2Carets(ev, index, h2Click);
+        });
+    });
+}
+
+export {settings};
