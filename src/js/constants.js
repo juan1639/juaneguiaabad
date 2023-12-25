@@ -8,6 +8,7 @@ export class Settings {
             h2Contenedor: document.getElementsByClassName('h2-contenedor'),
             h2Click: document.getElementsByClassName('h2'),
             h2Carets: document.getElementsByClassName('fa'),
+            botonesCarrusel: document.getElementsByClassName('boton-carrusel'),
 
             principal: document.getElementById('principal'),
             navbar_proyectos: document.getElementsByClassName('li__navbar__proyectos'),
@@ -34,8 +35,9 @@ export class Settings {
                 ['contenedores_scroll', true, '-49%', '0.0', '4em', '0%', '1', 'fit-content']
             ],
             carets_h2: [
+                ['h2Contenedor', false],
                 ['h2Contenedor', false]
-            ],
+            ]
         };
 
         this.mis_lenguajesImg = [

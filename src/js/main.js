@@ -3,13 +3,14 @@
 // 
 // =================================================================================
 import { Settings } from './constants.js';
-// import { crearElementos_fetchingJson } from './fetching-iter.js';
+import { crearElementos_fetchingJson } from './fetching-iter.js';
 
 import {
     carga_misLenguajes_imagenes,
     cambiar_pestana_navbarProyectos,
     ver_mas,
     acciones_h2Carets,
+    acciones_botonesCarrusel
 } from "./functions.js";
 
 let settings;
@@ -18,9 +19,9 @@ let settings;
 //  Fetching info tarjetas proyectos
 //  
 // ---------------------------------------------------------------------------------
-/* const recibeInfo_proyectos = async () => {
+const recibeInfo_proyectos = async () => {
 
-    const endpoint = './json/proyectos.json';
+    const endpoint = '../src/json/proyectos.json';
 
     try {
         const response = await fetch(endpoint, {cache: 'no-cache'});
@@ -37,15 +38,16 @@ let settings;
     } catch (error) {
         console.log(error);
     }
-} */
+}
 
 // ----------------------------------------------------------------------------------
-/* const muestraResultados = (response) => {
+const muestraResultados = (response) => {
 
     console.log(response);
 
     let contador = 999;
-    let opcionIndex = -1;
+    let x = -40;
+    let opcionIndex = 0;
     const navbar_opciones = Object.keys(response);
 
     for (let opcionElegida of navbar_opciones) {
@@ -55,9 +57,10 @@ let settings;
         for (let i of response[opcionElegida]) {
 
             contador --;
+            x += 40;
 
-            const tarjeta = crearElementos_fetchingJson(i, contador, opcionIndex);
-            settings.doms.contenedor_proyectos[opcionIndex].appendChild(tarjeta);
+            const tarjeta = crearElementos_fetchingJson(i, contador, x, opcionIndex);
+            settings.doms.h2Contenedor[opcionIndex].appendChild(tarjeta);
             
             tarjeta.addEventListener('click', (ev) => {
                 ver_mas(ev);
@@ -65,8 +68,8 @@ let settings;
         }
     }
     
-    opcion_proyectosPorDefecto();
-} */
+    // opcion_proyectosPorDefecto();
+}
 
 // =================================================================================
 /* function opcion_proyectosPorDefecto() {
@@ -86,7 +89,7 @@ let settings;
 window.onload = () => {
 
     settings = new Settings();
-    // recibeInfo_proyectos();
+    recibeInfo_proyectos();
     // carga_misLenguajes_imagenes();
 
     /* Array.from(settings.doms.navbar_proyectos).forEach(opcion => {
@@ -111,6 +114,17 @@ window.onload = () => {
         
         h2Click.addEventListener('click', (ev) => {
             acciones_h2Carets(ev, index, h2Click);
+        });
+    });
+
+    Array.from(settings.doms.botonesCarrusel).forEach((botonClick, index) => {
+
+        console.log(botonClick);
+
+        const indice = index + 1;
+        
+        botonClick.addEventListener('click', (ev) => {
+            acciones_botonesCarrusel(ev, indice, botonClick);
         });
     });
 }

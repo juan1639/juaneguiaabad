@@ -94,9 +94,52 @@ function acciones_h2Carets(ev, index, elemento) {
     }
 }
 
+// =================================================================================
+function acciones_botonesCarrusel(ev, index, elemento) {
+
+    
+    console.log(ev.target.id, '...click');
+    const idBoton = ev.target.id;
+
+    console.log(elemento.className);
+
+    let element = settings.doms.h2Contenedor[index];
+    element = Array.from(element.childNodes);
+
+    // let booleano = settings.valores_iniciales.carets_h2[index][1];
+
+    console.log(element);
+
+    /* if (booleano) {
+        settings.valores_iniciales.carets_h2[index][1] = false;
+        Array.from(settings.doms.h2Carets)[index].className = 'fa fa-caret-down';
+        settings.doms[element][index].style.animation = 'ocultarLenguajes 2s 1 forwards';
+    
+    } else {
+        settings.valores_iniciales.carets_h2[index][1] = true;
+        Array.from(settings.doms.h2Carets)[index].className = 'fa fa-caret-up';
+        settings.doms[element][index].style.animation = 'mostrarLenguajes 4s 1 forwards';
+    } */
+
+    element.forEach((element, index) => {
+        
+        if (index > 2) {
+
+            let posActual = element.style.left.slice(0, -1);
+            posActual = parseInt(posActual);
+            console.log(posActual);
+
+            posActual -= 40;
+
+            element.style.left = `${posActual.toString()}%`;
+        }
+    });
+}
+
 export {
     carga_misLenguajes_imagenes,
     cambiar_pestana_navbarProyectos,
     ver_mas,
-    acciones_h2Carets
+    acciones_h2Carets,
+    acciones_botonesCarrusel
 };
