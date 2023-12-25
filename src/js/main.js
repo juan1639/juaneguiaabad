@@ -21,7 +21,7 @@ let settings;
 // ---------------------------------------------------------------------------------
 const recibeInfo_proyectos = async () => {
 
-    const endpoint = '../src/json/proyectos.json';
+    const endpoint = './src/json/proyectos.json';
 
     try {
         const response = await fetch(endpoint, {cache: 'no-cache'});
