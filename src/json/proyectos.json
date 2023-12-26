@@ -8,6 +8,20 @@
             "descripcion": "Recreación del juego clásico arcade Pacman programado en JavaScript vanilla, usando sólo la etiqueta canvas"
         },
         {
+            "nombre": "TetrisJS Responsive",
+            "imagen": "./src/img/miniatura_tetris2.png",
+            "githubURL": "https://github.com/juan1639/Tetris",
+            "url": "https://juan1639.github.io/Tetris",
+            "descripcion": "Recreación del juego clásico Tetris, programado en JavaScript vanilla, usando sólo la etiqueta canvas"
+        },
+        {
+            "nombre": "DonkeyJon",
+            "imagen": "./src/img/miniatura_DonkeyJon.png",
+            "githubURL": "https://github.com/juan1639/DonkeyJon",
+            "url": "https://juan1639.github.io/DonkeyJon",
+            "descripcion": "Recreación de un juego de tipo plataformas verticales en JavaScript vanilla, usando sólo la etiqueta canvas"
+        },
+        {
             "nombre": "Galaximi",
             "imagen": "./src/img/miniatura_galaximi.png",
             "githubURL": "https://github.com/juan1639/Galaximi2",
@@ -27,20 +41,6 @@
             "githubURL": "https://github.com/juan1639/snake-responsive",
             "url": "https://juan1639.github.io/snake-responsive",
             "descripcion": "Un pequeño proyecto en JavaScript, sólo usando CSS, del llamado juego de la serpiente, también conocido con otros nombres, como snake, viborita, etc..."
-        },
-        {
-            "nombre": "DonkeyJon",
-            "imagen": "./src/img/miniatura_DonkeyJon.png",
-            "githubURL": "https://github.com/juan1639/DonkeyJon",
-            "url": "https://juan1639.github.io/DonkeyJon",
-            "descripcion": "Recreación de un juego de tipo plataformas verticales en JavaScript vanilla, usando sólo la etiqueta canvas"
-        },
-        {
-            "nombre": "TetrisJS Responsive",
-            "imagen": "./src/img/miniatura_tetris2.png",
-            "githubURL": "https://github.com/juan1639/Tetris",
-            "url": "https://juan1639.github.io/Tetris",
-            "descripcion": "Recreación del juego clásico Tetris, programado en JavaScript vanilla, usando sólo la etiqueta canvas"
         },
         {
             "nombre": "Paises del mundo",

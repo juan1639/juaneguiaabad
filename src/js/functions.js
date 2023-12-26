@@ -122,8 +122,11 @@ function acciones_botonesCarrusel(ev, index, elemento) {
     } */
 
     element.forEach((element, index) => {
-        
-        if (index > 2) {
+
+        // index > 4 ... porque hay 4 elementos antes que los proyectos, que comienzan en el 5...
+        if (index > 4) {
+
+            console.log(element.style.left);
 
             let posActual = element.style.left.slice(0, -1);
             posActual = parseInt(posActual);
