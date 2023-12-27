@@ -95,9 +95,11 @@ function acciones_h2Carets(ev, index, elemento) {
 }
 
 // =================================================================================
-function acciones_botonesCarrusel(ev, index, elemento) {
+function acciones_botonesCarrusel(ev, index, elemento, desplazamiento) {
 
-    
+    // elemento = botones-carrusel
+    // element = elementos carrusel moviles
+
     console.log(ev.target.id, '...click');
     const idBoton = ev.target.id;
 
@@ -105,37 +107,31 @@ function acciones_botonesCarrusel(ev, index, elemento) {
 
     let element = settings.doms.h2Contenedor[index];
     element = Array.from(element.childNodes);
-
-    // let booleano = settings.valores_iniciales.carets_h2[index][1];
-
     console.log(element);
 
-    /* if (booleano) {
-        settings.valores_iniciales.carets_h2[index][1] = false;
-        Array.from(settings.doms.h2Carets)[index].className = 'fa fa-caret-down';
-        settings.doms[element][index].style.animation = 'ocultarLenguajes 2s 1 forwards';
-    
-    } else {
-        settings.valores_iniciales.carets_h2[index][1] = true;
-        Array.from(settings.doms.h2Carets)[index].className = 'fa fa-caret-up';
-        settings.doms[element][index].style.animation = 'mostrarLenguajes 4s 1 forwards';
-    } */
+    const nro_ind_real = element.length - 7;
 
+    // ----------------------------------------------------------------
     element.forEach((element, index) => {
-
+        
         // index > 4 ... porque hay 4 elementos antes que los proyectos, que comienzan en el 5...
         if (index > 4) {
-
+            
             console.log(element.style.left);
-
+            
             let posActual = element.style.left.slice(0, -1);
             posActual = parseInt(posActual);
             console.log(posActual);
 
-            posActual -= 40;
+            if (elemento.className === 'boton-carrusel iz' && posActual > -(nro_ind_real * desplazamiento - (index - 5) * desplazamiento)) {
+                posActual -= desplazamiento;
+            } else if (elemento.className === 'boton-carrusel de' && posActual < (index - 4) * desplazamiento) {
+                posActual += desplazamiento;
+            }
 
             element.style.left = `${posActual.toString()}%`;
         }
+
     });
 }
 

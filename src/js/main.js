@@ -92,20 +92,7 @@ window.onload = () => {
     recibeInfo_proyectos();
     // carga_misLenguajes_imagenes();
 
-    /* Array.from(settings.doms.navbar_proyectos).forEach(opcion => {
-
-        opcion.addEventListener('click', (ev) => {
-            cambiar_pestana_navbarProyectos(ev, opcion);
-        });
-    });
-
-    Array.from(settings.doms.carets).forEach((caret, index) => {
-
-        caret.addEventListener('click', (ev) => {
-            acciones_caretsAbajo(ev, index, caret);
-        });
-    }); */
-
+    // -------------------------------------------------------------------
     console.log(Array.from(settings.doms.h2Carets));
 
     Array.from(settings.doms.h2Click).forEach((h2Click, index) => {
@@ -117,16 +104,71 @@ window.onload = () => {
         });
     });
 
+    // -------------------------------------------------------------------
+    const desplazamiento = 40;
+
     Array.from(settings.doms.botonesCarrusel).forEach((botonClick, index) => {
 
         console.log(botonClick);
 
-        const indice = index + 1;
+        const indice = index + 1; // +1 porque el index=0 seria el h2Contenedor de los lenguajes
         
         botonClick.addEventListener('click', (ev) => {
-            acciones_botonesCarrusel(ev, indice, botonClick);
+            acciones_botonesCarrusel(ev, indice, botonClick, desplazamiento);
         });
     });
+
+    Array.from(settings.doms.botonesCarruselDe).forEach((botonClick, index) => {
+
+        console.log(botonClick);
+
+        const indice = index + 1; // +1 porque el index=0 seria el h2Contenedor de los lenguajes
+        
+        botonClick.addEventListener('click', (ev) => {
+            acciones_botonesCarrusel(ev, indice, botonClick, desplazamiento);
+        });
+    });
+
+    // -----------------------------------------------------------------------------
+    setInterval(() => {
+
+        Array.from(settings.doms.botonesCarruselDe).forEach((botonClick, index) => {
+            
+            if (index === 0) {
+                
+                // +1 porque el index=0 seria el h2Contenedor de los lenguajes
+                let element = settings.doms.h2Contenedor[index + 1];
+                element = Array.from(element.childNodes);
+
+                if (parseInt(element[5].style.left.slice(0, -1)) === desplazamiento) {
+                    botonClick.style.visibility = 'hidden';
+                    
+                } else if (parseInt(element[5].style.left.slice(0, -1)) !== desplazamiento) {
+                    botonClick.style.visibility = 'visible';
+                }
+            }
+        });
+        
+        Array.from(settings.doms.botonesCarrusel).forEach((botonClick, index) => {
+            
+            if (index === 0) {
+                
+                // +1 porque el index=0 seria el h2Contenedor de los lenguajes
+                let element = settings.doms.h2Contenedor[index + 1];
+                element = Array.from(element.childNodes);
+                
+                const nro_indices_real = element.length - 7;
+
+                if (parseInt(element[5].style.left.slice(0, -1)) === -(desplazamiento * nro_indices_real)) {
+                    botonClick.style.visibility = 'hidden';
+                
+                } else if (parseInt(element[5].style.left.slice(0, -1)) !== -(desplazamiento * nro_indices_real)) {
+                    botonClick.style.visibility = 'visible';
+                }
+            }
+        });
+
+    }, 500);
 }
 
 export {settings};

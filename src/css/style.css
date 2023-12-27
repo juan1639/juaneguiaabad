@@ -1,5 +1,6 @@
 :root {
   --blanco: rgb(240, 240, 240);
+  --blanco-azulado:rgb(200, 245, 255);
   --azul-masclaro: rgb(82, 211, 216);
   --azul-claro: rgb(56, 135, 190);
   --azul-darkcyan: darkcyan;
@@ -166,20 +167,20 @@ h2:hover, summary:hover {
 }
 
 #h2-mis-lenguajes {
-  color: rgb(200, 240, 255);
+  color: var(--blanco-azulado);
 }
 
-#h2-mis-videos {
+#h2-mis-videos, #h2-mis-proyectos, #h2-mis-githubProyectos {
   color: aqua;
 }
 
-#h2-mis-proyectos {
+/* #h2-mis-proyectos {
   color: aquamarine;
-}
+} */
 
 .h2 {
   width: fit-content;
-  padding: 0.2em 0.8em;
+  padding: 0.2em 0.5em;
 }
 
 .h2-contenedor {
@@ -269,12 +270,12 @@ h2:hover, summary:hover {
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
-  transition: all 2s;
+  transition: all 1.8s;
   position: absolute;
 }
 
 .tarjeta__proyecto:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   box-shadow: 7px 7px 5px black;
 }
 
@@ -311,10 +312,10 @@ h2:hover, summary:hover {
 
 .contenedor__titulo-tarjeta p {
   border-radius: 5px;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   font-style: italic;
-  color: black;
+  color: darkred;
   background-color: var(--azul-claro);
   padding: 1em;
 }
@@ -404,6 +405,7 @@ h2:hover, summary:hover {
   outline: none;
   top: 69%;
   z-index: 1999;
+  visibility: visible;
 }
 
 .de {
@@ -517,7 +519,7 @@ RESPONSIVE
     padding: 0.2em 0.2em 0.2em 0.8em;
   }
   
-  #sobremi {
+  .header article .sobremi {
     max-width: 200px;
     font-size: var(--letra-responsive-mini);
     padding-left: 0.8em;
@@ -534,7 +536,7 @@ RESPONSIVE
   }
   
   .h2 {
-    padding: 0.2em 0.8em;
+    padding: 0.2em 0.5em;
   }
   
   .h2-contenedor {

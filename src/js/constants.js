@@ -9,6 +9,7 @@ export class Settings {
             h2Click: document.getElementsByClassName('h2'),
             h2Carets: document.getElementsByClassName('fa'),
             botonesCarrusel: document.getElementsByClassName('boton-carrusel iz'),
+            botonesCarruselDe: document.getElementsByClassName('boton-carrusel de'),
 
             principal: document.getElementById('principal'),
             navbar_proyectos: document.getElementsByClassName('li__navbar__proyectos'),
