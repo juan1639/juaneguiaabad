@@ -7,7 +7,6 @@ import { crearElementos_fetchingJson } from './fetching-iter.js';
 
 import {
     carga_misLenguajes_imagenes,
-    cambiar_pestana_navbarProyectos,
     ver_mas,
     acciones_h2Carets,
     acciones_botonesCarrusel
@@ -21,10 +20,10 @@ let settings;
 // ---------------------------------------------------------------------------------
 const recibeInfo_proyectos = async () => {
 
-    const endpoint = './src/json/proyectos.json';
+    // const endpoint = './src/json/proyectos.json';
 
     try {
-        const response = await fetch(endpoint, {cache: 'no-cache'});
+        const response = await fetch(settings.endpoint, {cache: 'no-cache'});
         console.log(response);
 
         if (response.ok) {
@@ -67,23 +66,7 @@ const muestraResultados = (response) => {
             });
         }
     }
-    
-    // opcion_proyectosPorDefecto();
 }
-
-// =================================================================================
-/* function opcion_proyectosPorDefecto() {
-
-    const elementos = Array.from(settings.doms.navbar_proyectos);
-    const opciones = settings.valores_iniciales.navbar_proyectos;
-
-    for (let i = 0; i < elementos.length; i ++) {
-        if (opciones[i][1]) elementos[i].style.backgroundColor = 'var(--color12)';
-    }
-
-    settings.doms.iconos_lenguajes.style.transform = 'translateY(-49%) scale(1, 0.0)';
-    settings.doms.iconos_lenguajes.style.height = '2em';
-} */
 
 // =================================================================================
 window.onload = () => {

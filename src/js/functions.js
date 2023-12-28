@@ -18,50 +18,6 @@ function carga_misLenguajes_imagenes() {
 }
 
 // =================================================================================
-function cambiar_pestana_navbarProyectos(ev, opcion) {
-
-    console.log(ev.target.id);
-    const target = ev.target.id;
-    const opciones = settings.valores_iniciales.navbar_proyectos;
-    const change_contenedor = settings.doms.contenedor_proyectos;
-
-    Array.from(settings.doms.navbar_proyectos).forEach(borra => {
-        borra.style.backgroundColor = 'transparent';
-    });
-    
-    opcion.style.backgroundColor = 'var(--color12)';
-
-    let i = -1;
-    
-    for (let idProyecto of opciones) {
-
-        i ++;
-        
-        if (idProyecto[0] === target) {
-            idProyecto[1] = true;
-            
-            let margenLeft = -(i * 100);
-            margenLeft = margenLeft.toString();
-            settings.doms.contenedores_scroll.style.marginLeft = margenLeft + '%';
-            
-        } else {
-            idProyecto[1] = false;
-        }
-
-        console.log(idProyecto[0], idProyecto[1]);
-    }
-}
-
-// =================================================================================
-function ver_mas(ev) {
-    
-    const target = ev.target.id;
-    console.log(target, 'ver mas');
-
-    if (target === '#') console.log('####');
-}
-
-// =================================================================================
 function acciones_h2Carets(ev, index, elemento) {
 
     
@@ -135,9 +91,17 @@ function acciones_botonesCarrusel(ev, index, elemento, desplazamiento) {
     });
 }
 
+// =================================================================================
+function ver_mas(ev) {
+    
+    const target = ev.target.id;
+    console.log(target, 'ver mas');
+
+    if (target === '#') console.log('####');
+}
+
 export {
     carga_misLenguajes_imagenes,
-    cambiar_pestana_navbarProyectos,
     ver_mas,
     acciones_h2Carets,
     acciones_botonesCarrusel
