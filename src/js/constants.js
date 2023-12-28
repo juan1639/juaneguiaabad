@@ -37,6 +37,8 @@ export class Settings {
             ],
             carets_h2: [
                 ['h2Contenedor', false],
+                ['h2Contenedor', false],
+                ['h2Contenedor', false],
                 ['h2Contenedor', false]
             ]
         };

@@ -46,12 +46,12 @@ const muestraResultados = (response) => {
     console.log(response);
 
     let contador = 999;
-    let x = -40;
     let opcionIndex = 0;
     const navbar_opciones = Object.keys(response);
-
+    
     for (let opcionElegida of navbar_opciones) {
-
+        
+        let x = -40;
         opcionIndex ++;
 
         for (let i of response[opcionElegida]) {
@@ -134,7 +134,7 @@ window.onload = () => {
 
         Array.from(settings.doms.botonesCarruselDe).forEach((botonClick, index) => {
             
-            if (index === 0) {
+            if (index < 5) {
                 
                 // +1 porque el index=0 seria el h2Contenedor de los lenguajes
                 let element = settings.doms.h2Contenedor[index + 1];
@@ -151,7 +151,7 @@ window.onload = () => {
         
         Array.from(settings.doms.botonesCarrusel).forEach((botonClick, index) => {
             
-            if (index === 0) {
+            if (index < 5) {
                 
                 // +1 porque el index=0 seria el h2Contenedor de los lenguajes
                 let element = settings.doms.h2Contenedor[index + 1];
