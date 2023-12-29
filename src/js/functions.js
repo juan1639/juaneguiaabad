@@ -92,6 +92,47 @@ function acciones_botonesCarrusel(ev, index, elemento, desplazamiento) {
 }
 
 // =================================================================================
+function acciones_botonesCarrusel_2(ev, index, elemento, desplazamiento) {
+
+    // elemento = botones-carrusel
+    // element = elementos carrusel moviles
+
+    console.log(ev.target.id, '...click');
+    const idBoton = ev.target.id;
+
+    console.log(elemento.className);
+
+    let element = settings.doms.h2Contenedor[index];
+    element = Array.from(element.childNodes);
+    console.log(element);
+
+    const nro_ind_real = element.length - 7;
+
+    // ----------------------------------------------------------------
+    element.forEach((element, index) => {
+        
+        // index > 4 ... porque hay 4 elementos antes que los proyectos, que comienzan en el 5...
+        if (index > 4) {
+            
+            console.log(element.style.left);
+            
+            let posActual = element.style.left.slice(0, -1);
+            posActual = parseInt(posActual);
+            console.log(posActual);
+
+            if (elemento.className === 'boton-carrusel iz' && posActual > -(nro_ind_real * desplazamiento - (index - 5) * desplazamiento)) {
+                posActual -= desplazamiento;
+            } else if (elemento.className === 'boton-carrusel de' && posActual < (index - 4) * desplazamiento) {
+                posActual += desplazamiento;
+            }
+
+            element.style.left = `${posActual.toString()}%`;
+        }
+
+    });
+}
+
+// =================================================================================
 function ver_mas(ev) {
     
     const target = ev.target.id;
@@ -104,5 +145,6 @@ export {
     carga_misLenguajes_imagenes,
     ver_mas,
     acciones_h2Carets,
-    acciones_botonesCarrusel
+    acciones_botonesCarrusel,
+    acciones_botonesCarrusel_2
 };

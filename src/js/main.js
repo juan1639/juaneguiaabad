@@ -3,7 +3,7 @@
 // 
 // =================================================================================
 import { Settings } from './constants.js';
-import { crearElementos_fetchingJson } from './fetching-iter.js';
+import { crearElementos_fetchingJson, crearElementos_fetchingJson_2 } from './fetching-iter.js';
 
 import {
     carga_misLenguajes_imagenes,
@@ -31,7 +31,7 @@ const recibeInfo_proyectos = async () => {
             console.log(jsonResponse);
 
             //funcion para mostrar la informacion
-            muestraResultados(jsonResponse);
+            muestraResultados_2(jsonResponse);
         }
 
     } catch (error) {
@@ -60,6 +60,38 @@ const muestraResultados = (response) => {
 
             const tarjeta = crearElementos_fetchingJson(i, contador, x, opcionIndex);
             settings.doms.h2Contenedor[opcionIndex].appendChild(tarjeta);
+            
+            tarjeta.addEventListener('click', (ev) => {
+                ver_mas(ev);
+            });
+        }
+    }
+}
+
+// ----------------------------------------------------------------------------------
+const muestraResultados_2 = (response) => {
+
+    console.log(response);
+
+    let nro_elementos;
+    let idTarjeta = 0;
+    let opcionIndex = -1;
+    const seccion = Object.keys(response);
+    
+    for (let opcionElegida of seccion) {
+
+        console.log(response[opcionElegida].length);
+        nro_elementos = response[opcionElegida].length;
+        
+        idTarjeta = 0;
+        opcionIndex ++;
+
+        for (let i of response[opcionElegida]) {
+            
+            idTarjeta ++;
+
+            const tarjeta = crearElementos_fetchingJson_2(i, idTarjeta, opcionIndex, nro_elementos);
+            settings.doms.sliderControls[opcionIndex].appendChild(tarjeta);
             
             tarjeta.addEventListener('click', (ev) => {
                 ver_mas(ev);
@@ -113,7 +145,7 @@ window.onload = () => {
     });
 
     // -----------------------------------------------------------------------------
-    setInterval(() => {
+/*     setInterval(() => {
 
         Array.from(settings.doms.botonesCarruselDe).forEach((botonClick, index) => {
             
@@ -151,7 +183,7 @@ window.onload = () => {
             }
         });
 
-    }, 500);
+    }, 500); */
 }
 
 export {settings};

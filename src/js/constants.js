@@ -10,6 +10,7 @@ export class Settings {
             h2Contenedor: document.getElementsByClassName('h2-contenedor'),
             h2Click: document.getElementsByClassName('h2'),
             h2Carets: document.getElementsByClassName('fa'),
+            sliderControls: document.getElementsByClassName('sliderControls'),
             botonesCarrusel: document.getElementsByClassName('boton-carrusel iz'),
             botonesCarruselDe: document.getElementsByClassName('boton-carrusel de')
         };
