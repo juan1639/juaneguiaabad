@@ -5,13 +5,15 @@
             "imagen": "./src/img/miniatura_pacJon50x50.png",
             "githubURL": "https://github.com/juan1639/PacClonF",
             "url": "https://juan1639.github.io/PacClonF",
+            "lenguaje": "./src/img/javascript-1.svg",
             "descripcion": "Recreación del juego clásico arcade Pacman programado en JavaScript vanilla, usando sólo la etiqueta canvas"
         },
         {
-            "nombre": "TetrisJS Responsive",
+            "nombre": "TetrisJS",
             "imagen": "./src/img/miniatura_tetris2.png",
             "githubURL": "https://github.com/juan1639/Tetris",
             "url": "https://juan1639.github.io/Tetris",
+            "lenguaje": "./src/img/javascript-1.svg",
             "descripcion": "Recreación del juego clásico Tetris, programado en JavaScript vanilla, usando sólo la etiqueta canvas"
         },
         {
@@ -19,6 +21,7 @@
             "imagen": "./src/img/miniatura_DonkeyJon.png",
             "githubURL": "https://github.com/juan1639/DonkeyJon",
             "url": "https://juan1639.github.io/DonkeyJon",
+            "lenguaje": "./src/img/javascript-1.svg",
             "descripcion": "Recreación de un juego de tipo plataformas verticales en JavaScript vanilla, usando sólo la etiqueta canvas"
         },
         {
@@ -26,6 +29,7 @@
             "imagen": "./src/img/miniatura_galaximi.png",
             "githubURL": "https://github.com/juan1639/Galaximi2",
             "url": "https://juan1639.github.io/Galaximi2",
+            "lenguaje": "./src/img/javascript-1.svg",
             "descripcion": "Recreación de un juego clásico tipo Galaxian, Space Invaders, etc. hecha en JavaScript vanilla, usando sólo la etiqueta canvas"
         },
         {
@@ -33,6 +37,7 @@
             "imagen": "./src/img/miniatura_bjj.png",
             "githubURL": "https://github.com/juan1639/JBlackJack",
             "url": "https://juan1639.github.io/JBlackJack",
+            "lenguaje": "./src/img/javascript-1.svg",
             "descripcion": "Un sencillo proyecto del juego de cartas Back-Jack en JS vanilla, usando sólo CSS"
         },
         {
@@ -40,6 +45,7 @@
             "imagen": "./src/img/miniatura_snake.png",
             "githubURL": "https://github.com/juan1639/snake-responsive",
             "url": "https://juan1639.github.io/snake-responsive",
+            "lenguaje": "./src/img/javascript-1.svg",
             "descripcion": "Un pequeño proyecto en JavaScript, sólo usando CSS, del llamado juego de la serpiente, también conocido con otros nombres, como snake, viborita, etc..."
         },
         {
@@ -47,6 +53,7 @@
             "imagen": "./src/img/miniatura_countries.png",
             "githubURL": "https://github.com/juan1639/Paises-mundo",
             "url": "https://juan1639.github.io/Paises-mundo",
+            "lenguaje": "./src/img/javascript-1.svg",
             "descripcion": "Pequeño proyecto de un fecthing de datos de la API pública paises del mundo"
         }
     ],
@@ -56,6 +63,7 @@
             "imagen": "./src/img/miniatura_pacman.png",
             "githubURL": "https://github.com/juan1639/pacman-python-pygame",
             "url": "https://youtu.be/2Ri930tW1BA?si=PKYX4GZ5ABZ6NzYw",
+            "lenguaje": "./src/img/python-4.svg",
             "descripcion": "Serie de vídeos acerca del juego clásico Pacman en python con la librería pygame. En mi canal hay una serie de unos 20 vídeos acerca del proyecto"
         },
         {
@@ -63,6 +71,7 @@
             "imagen": "./src/img/miniatura_cursoPygame3.png",
             "githubURL": "https://github.com/juan1639/curso-pygame",
             "url": "https://youtu.be/YjVOa9hzSzg?si=kx00SnEeubCtcZxH",
+            "lenguaje": "./src/img/python-4.svg",
             "descripcion": "Serie de videos de mi canal del curso básico acerca de la librería pygame de python"
         },
         {
@@ -70,6 +79,7 @@
             "imagen": "./src/img/miniatura_tetris_demo.png",
             "githubURL": "https://github.com/juan1639/TetrisPygame",
             "url": "https://youtu.be/L1OoD3zhhIc?si=JCDFeDJlyMEH3u_J",
+            "lenguaje": "./src/img/python-4.svg",
             "descripcion": "Serie de vídeos acerca del juego clásico Tetris hecha en python con la librería pygame"
         },
         {
@@ -77,6 +87,7 @@
             "imagen": "./src/img/miniatura_zxAntorcha.png",
             "githubURL": "#",
             "url": "https://www.youtube.com/watch?v=nkcfnut-ozU&list=PLYu6HJLNYJW03uFKSpv_SrI_NCFlHeEAu&index=4",
+            "lenguaje": "./src/img/javascript-1.svg",
             "descripcion": "Dos vídeos acerca de un sprite antorcha hecho en ensamblador Z80 Spectrum"
         },
         {
@@ -84,13 +95,15 @@
             "imagen": "./src/img/miniatura_snakeJava2.png",
             "githubURL": "https://github.com/juan1639/snakeJava",
             "url": "https://youtu.be/HXcqAtsjkVg?si=ifdJeoOUKAqjybLN",
+            "lenguaje": "./src/img/java.svg",
             "descripcion": "Serie de tres vídeos de un pequeño proyecto en Java, del llamado juego de la serpiente, también conocido con otros nombres, como snake, viborita, etc..."
         },
         {
-            "nombre": "TetrisJS Responsive",
+            "nombre": "TetrisJS",
             "imagen": "./src/img/miniatura_tetris2.png",
             "githubURL": "https://github.com/juan1639/Tetris",
             "url": "https://youtu.be/9GDYXcA0qm4?si=2D9l6vGBWivr-Ftt",
+            "lenguaje": "./src/img/javascript-1.svg",
             "descripcion": "Vídeos acerca de una recreación del juego clásico Tetris, programado en JavaScript vanilla, usando sólo la etiqueta canvas"
         },
         {
@@ -98,6 +111,7 @@
             "imagen": "./src/img/miniatura_zxPacman.png",
             "githubURL": "#",
             "url": "https://www.youtube.com/watch?v=viLXwxwJDKg&list=PLYu6HJLNYJW03uFKSpv_SrI_NCFlHeEAu",
+            "lenguaje": "./src/img/javascript-1.svg",
             "descripcion": "Vídeo en el que se puede ver como compilar un juego tipo Pacman hecho en Basic Sinclair y posteriormente compilado, ganando velocidad."
         },
         {
@@ -105,6 +119,7 @@
             "imagen": "./src/img/miniatura_zxCaballero.png",
             "githubURL": "#",
             "url": "https://www.youtube.com/watch?v=u2zhquTGfv0&t=197s",
+            "lenguaje": "./src/img/javascript-1.svg",
             "descripcion": "Serie de vídeos sobre un sprite de un caballero medieval en ensamblador Z80 Spectrum."
         },
         {
@@ -112,6 +127,7 @@
             "imagen": "./src/img/miniatura_pacJon50x50.png",
             "githubURL": "https://github.com/juan1639/PacClonF",
             "url": "https://youtu.be/H5KgDMTZEiE?si=lFpW-Wm5R2iO3N23",
+            "lenguaje": "./src/img/javascript-1.svg",
             "descripcion": "Serie de vídeos acerca del juego clásico arcade Pacman programado en JavaScript vanilla, usando sólo la etiqueta canvas"
         },
         {
@@ -119,6 +135,7 @@
             "imagen": "./src/img/miniatura_snake.png",
             "githubURL": "https://github.com/juan1639/snake-responsive",
             "url": "https://youtu.be/bm4Is8F3038?si=0X6oncUvNmAVsQap",
+            "lenguaje": "./src/img/javascript-1.svg",
             "descripcion": "Cuatro vídeos sobre un pequeño proyecto en JavaScript, sólo usando CSS, del llamado juego de la serpiente, también conocido con otros nombres, como snake, viborita, etc..."
         },
         {
@@ -126,6 +143,7 @@
             "imagen": "./src/img/miniatura_java_3raya.png",
             "githubURL": "https://github.com/juan1639/TresRayaJava",
             "url": "https://youtu.be/aDHtmaL2Pnc?si=2sxe8DqK8U2dVmR-",
+            "lenguaje": "./src/img/java.svg",
             "descripcion": "Serie de vídeos acerca de un pequeño proyecto del juego 3 en Raya, programado en Java"
         },
         {
@@ -133,6 +151,7 @@
             "imagen": "./src/img/miniatura_QBPac.png",
             "githubURL": "https://github.com/juan1639/pacmanQB64",
             "url": "https://youtu.be/hbqlBn6WhZo?si=afXMaaoXhxheX4I3",
+            "lenguaje": "./src/img/javascript-1.svg",
             "descripcion": "Vídeos de una recreación juego clásico arcade Pacman, programado en lenguaje Basic QB64"
         },
         {
@@ -140,6 +159,7 @@
             "imagen": "./src/img/miniatura_retrogg.png",
             "githubURL": "https://github.com/juan1639/invaders",
             "url": "https://youtu.be/YyRRhSjRp-U?si=JBzw3CwtW-a0gOGW",
+            "lenguaje": "./src/img/javascript-1.svg",
             "descripcion": "Serie de vídeos acerca de un juego clásico tipo Galaxian, Space Invaders, etc. programado en lenguaje Basic QB64. En mi canal hay una serie de vídeos acerca de este proyecto"
         },
         {
@@ -147,6 +167,7 @@
             "imagen": "./src/img/miniatura_countries.png",
             "githubURL": "https://github.com/juan1639/Paises-mundo",
             "url": "https://youtu.be/yCoLonUEM4I?si=iKJ-kq-7T_S9ct-W",
+            "lenguaje": "./src/img/javascript-1.svg",
             "descripcion": "Vídeo acerca de un pequeño proyecto de un fecthing de datos de la API pública paises del mundo"
         }
     ],
@@ -156,6 +177,7 @@
             "imagen": "./src/img/img_mazeJS.png",
             "githubURL": "https://github.com/juan1639/AlgoritmosMazePathF",
             "url": "https://github.com/juan1639/AlgoritmosMazePathF",
+            "lenguaje": "./src/img/javascript-1.svg",
             "descripcion": "Algoritmos para crear laberintos y otro algoritmo A* para resolverlo y encontrar un camino."
         },
         {
@@ -163,6 +185,7 @@
             "imagen": "./src/img/miniatura_pacJon50x50.png",
             "githubURL": "https://github.com/juan1639/PacClonF",
             "url": "https://github.com/juan1639/PacClonF",
+            "lenguaje": "./src/img/javascript-1.svg",
             "descripcion": "Proyecto de un juego del tipo el clásico Pacman hecho en vanilla JavaScript."
         },
         {
@@ -170,6 +193,7 @@
             "imagen": "./src/img/miniatura_tetris_demo.png",
             "githubURL": "https://github.com/juan1639/TetrisPygame",
             "url": "https://github.com/juan1639/TetrisPygame",
+            "lenguaje": "./src/img/python-4.svg",
             "descripcion": "Proyecto de un juego tipo Tetris, hecho en python con la librería pygame."
         },
         {
@@ -177,6 +201,7 @@
             "imagen": "./src/img/miniatura_pacman.png",
             "githubURL": "https://github.com/juan1639/pacman-python-pygame",
             "url": "https://github.com/juan1639/pacman-python-pygame",
+            "lenguaje": "./src/img/python-4.svg",
             "descripcion": "Proyecto acerca de un juego tipo Pacman realizado en python usando la librería pygame."
         },
         {
@@ -184,6 +209,7 @@
             "imagen": "./src/img/miniatura_galaximi.png",
             "githubURL": "https://github.com/juan1639/Galaximi2",
             "url": "https://juan1639.github.io/Galaximi2",
+            "lenguaje": "./src/img/javascript-1.svg",
             "descripcion": "Proyecto sobre un juego tipo Galaxian, space invaders, etc. programado en vanilla JavaScript."
         },
         {
@@ -191,6 +217,7 @@
             "imagen": "./src/img/miniatura_snake.png",
             "githubURL": "https://github.com/juan1639/snake-responsive",
             "url": "https://github.com/juan1639/snake-responsive",
+            "lenguaje": "./src/img/javascript-1.svg",
             "descripcion": "Proyecto del sencillo juego de la serpiente en vanilla JavaScript."
         },
         {
@@ -198,6 +225,7 @@
             "imagen": "./src/img/miniatura_snakeJava2.png",
             "githubURL": "https://github.com/juan1639/snakeJava",
             "url": "https://github.com/juan1639/snakeJava",
+            "lenguaje": "./src/img/java.svg",
             "descripcion": "Proyecto del sencillo juego de la serpiente en Java."
         },
         {
@@ -205,6 +233,7 @@
             "imagen": "./src/img/miniatura_java_3raya.png",
             "githubURL": "https://github.com/juan1639/TresRayaJava",
             "url": "https://github.com/juan1639/TresRayaJava",
+            "lenguaje": "./src/img/java.svg",
             "descripcion": "Proyecto acerca de la realización de un juego del 3 en Raya en Java."
         },
         {
@@ -212,6 +241,7 @@
             "imagen": "./src/img/miniatura_QBPac.png",
             "githubURL": "https://github.com/juan1639/pacmanQB64",
             "url": "https://github.com/juan1639/pacmanQB64",
+            "lenguaje": "./src/img/javascript-1.svg",
             "descripcion": "Proyecto de un juego tipo el clásico Pacman realizado en Basic QB64."
         },
         {
@@ -219,6 +249,7 @@
             "imagen": "./src/img/miniatura_retrogg.png",
             "githubURL": "https://github.com/juan1639/invaders",
             "url": "https://github.com/juan1639/invaders",
+            "lenguaje": "./src/img/javascript-1.svg",
             "descripcion": "Proyecto de un juego de naves tipo Galaxian, space invaders, etc. programado en Basic QB64."
         },
         {
@@ -226,13 +257,15 @@
             "imagen": "./src/img/miniatura_cursoPygame3.png",
             "githubURL": "https://github.com/juan1639/curso-pygame",
             "url": "https://github.com/juan1639/curso-pygame",
+            "lenguaje": "./src/img/python-4.svg",
             "descripcion": "Archivos de mi curso básico acerca de la librería pygame de python."
         },
         {
-            "nombre": "TetrisJS Responsive",
+            "nombre": "TetrisJS",
             "imagen": "./src/img/miniatura_tetris2.png",
             "githubURL": "https://github.com/juan1639/Tetris",
             "url": "https://github.com/juan1639/Tetris",
+            "lenguaje": "./src/img/javascript-1.svg",
             "descripcion": "Proyecto de un juego tipo Tetris programado en vanilla JavaScript"
         },
         {
@@ -240,6 +273,7 @@
             "imagen": "./src/img/miniatura_puzzReact.png",
             "githubURL": "https://github.com/juan1639/Puzzle9",
             "url": "https://github.com/juan1639/Puzzle9",
+            "lenguaje": "./src/img/react-2.svg",
             "descripcion": "Pequeño proyecto de un juego tipo Puzzle, programado en React"
         },
         {
@@ -247,6 +281,7 @@
             "imagen": "./src/img/miniatura_bjj.png",
             "githubURL": "https://github.com/juan1639/JBlackJack",
             "url": "https://juan1639.github.io/JBlackJack",
+            "lenguaje": "./src/img/javascript-1.svg",
             "descripcion": "Un sencillo proyecto del juego de cartas Back-Jack en JS vanilla, usando sólo CSS"
         },
         {
@@ -254,6 +289,7 @@
             "imagen": "./src/img/miniatura_countries.png",
             "githubURL": "https://github.com/juan1639/Paises-mundo",
             "url": "https://github.com/juan1639/Paises-mundo",
+            "lenguaje": "./src/img/javascript-1.svg",
             "descripcion": "Pequeño proyecto de un fecthing de datos de la API pública paises del mundo"
         }
     ]

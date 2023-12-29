@@ -1,0 +1,62 @@
+/* ------------------------------------------------------------------ */
+.footer {
+    width: inherit;
+    height: fit-content;
+    display: flex;
+    justify-content: space-evenly;
+    color: darkslateblue;
+    background-color: var(--azul-marino);
+    padding: 2em 1em;
+}
+  
+.footer figure img {
+    width: 5vw;
+    height: 5vw;
+    margin-left: 0.1em;
+}
+  
+.footer a figure figcaption {
+    color: darkslateblue;
+    font-size: var(--letra-ultramini);
+}
+  
+.footer figure figcaption {
+    font-size: var(--letra-ultramini);
+}
+
+/* -------------------------------------------------
+RESPONSIVE
+------------------------------------------------- */
+@media (max-width: 768px) {
+    .footer {
+        padding: 2em 1em;
+    }
+      
+    .footer figure img {
+        width: 5vw;
+        height: 5vw;
+        margin-left: 0.1em;
+    }
+    
+    .footer figure figcaption {
+        font-size: var(--letra-responsive-ultramini);
+        /* display: none; */
+    }
+    
+    .footer a figure figcaption {
+        font-size: var(--letra-responsive-ultramini);
+        /* display: none; */
+    }
+}
+
+@media (max-width: 600px) {
+    .footer figure figcaption {
+        /* font-size: var(--letra-responsive-ultramini); */
+        display: none;
+    }
+    
+    .footer a figure figcaption {
+        /* font-size: var(--letra-responsive-ultramini); */
+        display: none;
+    }
+}
