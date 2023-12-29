@@ -62,6 +62,10 @@ h2 {
   cursor: pointer;
 }
 
+h4 {
+  font-size: var(--letra-grande);
+}
+
 p {
   color: var(--blanco);
   font-size: var(--letra-normal);

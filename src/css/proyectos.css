@@ -207,19 +207,51 @@
 }
   
 /* ------------------------------------------------------------------ */
-.incustrados {
-    width: inherit;
-    height: fit-content;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 0 1em;
+#mis-destacados h4 {
+    font-size: var(--letra-grande);
+    /* text-align: center; */
+    color: var(--blanco);
+    margin: 1em 0 0.2em 0.8em;
 }
-  
-.incustrados iframe {
-    /* width 560 -> height 315 (por defecto) */
-    width: 45vw;
-    height: 45vw;
+
+.incrustados {
+    width: 99%;
+    height: fit-content;
+    border: 2px solid var(--azul-masclaro);
+    border-radius: 8px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* align-items: flex-start; */
+    justify-content: space-around;
+    padding: 1em;
+    /* position: relative; */
+    overflow: hidden;
+}
+
+.incrustados #serie-pacman {
+    max-width: 40%;
+}
+
+#mis-destacados .incrustados h4 {
+    font-size: var(--letra-grande);
+    color: var(--blanco-azulado);
+}
+
+.incrustados p {
+    font-size: var(--letra-mini);
+    color: var(--azul-darkcyan);
+    margin: 0.6em 0 0.8em 1.8em;
+}
+
+#contacto-mail {
+    margin: 1em 0.5em 1em 1em;
+    font-style: italic;
+}
+
+#contacto-mail:hover {
+    background-color: var(--azul-medio);
+    transform: scale(1.04);
+    text-decoration: underline;
 }
 
 /* -------------------------------------------------
@@ -331,5 +363,42 @@ RESPONSIVE
       
     .flechaDe {
         margin: 27% 0 0 42%;
+    }
+
+    /* ------------------------------------------------------------------ */
+    #mis-destacados h4 {
+        font-size: var(--letra-responsive-grande);
+        /* text-align: center; */
+        margin: 0.8em 0 0.2em 0.8em;
+    }
+
+    .incrustados {
+        width: 99%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+        /* align-items: flex-start; */
+        /* justify-content: space-around; */
+        padding: 0.4em;
+        /* position: relative; */
+        overflow: hidden;
+    }
+
+    .incrustados #serie-pacman {
+        max-width: 80%;
+    }
+
+    #mis-destacados .incrustados h4 {
+        font-size: var(--letra-responsive-grande);
+    }
+
+    .incrustados p {
+        font-size: var(--letra-responsive-mini);
+        margin: 0.6em 0 0.8em 2em;
+    }
+
+    #contacto-mail {
+        margin: 1em 0.5em 1em 1.8em;
     }
 }
