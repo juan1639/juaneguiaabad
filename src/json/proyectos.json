@@ -17,6 +17,22 @@
             "descripcion": "Recreación del juego clásico Tetris, programado en JavaScript vanilla, usando sólo la etiqueta canvas"
         },
         {
+            "nombre": "Galaximi-Phaser",
+            "imagen": "./src/img/miniatura-galaximi.png",
+            "githubURL": "https://github.com/juan1639/Galaximi-phaser",
+            "url": "https://juan1639.github.io/Galaximi-phaser",
+            "lenguaje": "./src/img/javascript-1.svg",
+            "descripcion": "Recreación de un juego de naves tipo Galaxian, Space Invaders, etc. usando la librería Phaser"
+        },
+        {
+            "nombre": "Conecta4",
+            "imagen": "./src/img/miniatura-4raya.png",
+            "githubURL": "https://github.com/juan1639/Cuatro-rayaJs",
+            "url": "https://juan1639.github.io/Cuatro-rayaJs",
+            "lenguaje": "./src/img/javascript-1.svg",
+            "descripcion": "Juego Conecta4 (cuatro en raya) hecho en JavaScript con CSS"
+        },
+        {
             "nombre": "DonkeyJon",
             "imagen": "./src/img/miniatura_DonkeyJon.png",
             "githubURL": "https://github.com/juan1639/DonkeyJon",
@@ -151,7 +167,7 @@
             "imagen": "./src/img/miniatura_QBPac.png",
             "githubURL": "https://github.com/juan1639/pacmanQB64",
             "url": "https://youtu.be/hbqlBn6WhZo?si=afXMaaoXhxheX4I3",
-            "lenguaje": "./src/img/javascript-1.svg",
+            "lenguaje": "./src/img/icono-qb64.png",
             "descripcion": "Vídeos de una recreación juego clásico arcade Pacman, programado en lenguaje Basic QB64"
         },
         {
@@ -159,7 +175,7 @@
             "imagen": "./src/img/miniatura_retrogg.png",
             "githubURL": "https://github.com/juan1639/invaders",
             "url": "https://youtu.be/YyRRhSjRp-U?si=JBzw3CwtW-a0gOGW",
-            "lenguaje": "./src/img/javascript-1.svg",
+            "lenguaje": "./src/img/icono-qb64.png",
             "descripcion": "Serie de vídeos acerca de un juego clásico tipo Galaxian, Space Invaders, etc. programado en lenguaje Basic QB64. En mi canal hay una serie de vídeos acerca de este proyecto"
         },
         {
@@ -205,6 +221,22 @@
             "descripcion": "Proyecto acerca de un juego tipo Pacman realizado en python usando la librería pygame."
         },
         {
+            "nombre": "Galaximi-Phaser",
+            "imagen": "./src/img/miniatura-galaximi.png",
+            "githubURL": "https://github.com/juan1639/Galaximi-phaser",
+            "url": "https://github.com/juan1639/Galaximi-phaser",
+            "lenguaje": "./src/img/javascript-1.svg",
+            "descripcion": "Proyecto sobre un juego tipo Galaxian, space invaders, etc. programado en JavaScript con la librería Phaser."
+        },
+        {
+            "nombre": "Conecta4",
+            "imagen": "./src/img/miniatura-4raya.png",
+            "githubURL": "https://github.com/juan1639/Cuatro-rayaJs",
+            "url": "https://github.com/juan1639/Cuatro-rayaJs",
+            "lenguaje": "./src/img/javascript-1.svg",
+            "descripcion": "Proyecto de un juego tipo cuatro en raya (Conecta 4) en JavaScript con sólo CSS."
+        },
+        {
             "nombre": "Galaximi",
             "imagen": "./src/img/miniatura_galaximi.png",
             "githubURL": "https://github.com/juan1639/Galaximi2",
@@ -241,7 +273,7 @@
             "imagen": "./src/img/miniatura_QBPac.png",
             "githubURL": "https://github.com/juan1639/pacmanQB64",
             "url": "https://github.com/juan1639/pacmanQB64",
-            "lenguaje": "./src/img/javascript-1.svg",
+            "lenguaje": "./src/img/icono-qb64.png",
             "descripcion": "Proyecto de un juego tipo el clásico Pacman realizado en Basic QB64."
         },
         {
@@ -249,7 +281,7 @@
             "imagen": "./src/img/miniatura_retrogg.png",
             "githubURL": "https://github.com/juan1639/invaders",
             "url": "https://github.com/juan1639/invaders",
-            "lenguaje": "./src/img/javascript-1.svg",
+            "lenguaje": "./src/img/icono-qb64.png",
             "descripcion": "Proyecto de un juego de naves tipo Galaxian, space invaders, etc. programado en Basic QB64."
         },
         {
