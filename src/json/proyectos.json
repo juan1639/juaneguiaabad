@@ -189,6 +189,14 @@
     ],
     "recursos": [
         {
+            "nombre": "Chat tipo whatsapp",
+            "imagen": "./src/img/miniatura-chatExpress.png",
+            "githubURL": "https://github.com/juan1639/chatexpressvitenode",
+            "url": "https://github.com/juan1639/chatexpressvitenode",
+            "lenguaje": "./src/img/react-2.svg",
+            "descripcion": "Chat a tiempo real (tipo Whatsapp), utilizando React y socket-io-client para el front y express socket-io para el back."
+        },
+        {
             "nombre": "Algoritmos Laberintos",
             "imagen": "./src/img/img_mazeJS.png",
             "githubURL": "https://github.com/juan1639/AlgoritmosMazePathF",
