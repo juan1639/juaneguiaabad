@@ -156,6 +156,13 @@ h2:hover, summary:hover {
   padding-left: 1em;
 }
 
+#contacto-mail {
+  margin: 1em 0.5em 1em 1em;
+  padding-left: 0.4em;
+  font-style: italic;
+  color: var(--azul-royal);
+}
+
 /* -------------------------------------------------
 RESPONSIVE
 ------------------------------------------------- */

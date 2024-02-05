@@ -1,26 +1,10 @@
-import {
-    settings
-} from "./main.js";
+import { Settings } from "./constants.js";
 
 // =================================================================================
-function carga_misLenguajes_imagenes() {
-
-    for (let i = 0; i < settings.mis_lenguajesImg.length; i ++) {
-
-        const archivoImg = settings.mis_lenguajesImg[i];
-
-        const lenguajeImg = document.createElement('img');
-        lenguajeImg.setAttribute('class', 'iconos-lenguajes');
-        lenguajeImg.src = archivoImg;
-
-        settings.doms.iconos_lenguajesContainer.appendChild(lenguajeImg);
-    }
-}
-
-// =================================================================================
+//  Acciones carets ^ -> Mostrar/ocultar -> cambiar a true/false
+// ---------------------------------------------------------------------------------
 function acciones_h2Carets(ev, index, elemento) {
 
-    
     console.log(ev.target.id, '...click');
     const idCaret = ev.target.id;
 
@@ -33,35 +17,37 @@ function acciones_h2Carets(ev, index, elemento) {
         elemento.className = 'fa fa-caret-down';
     }
 
-    const element = settings.valores_iniciales.carets_h2[index][0];
-    let booleano = settings.valores_iniciales.carets_h2[index][1];
+    const element = Settings.valores_iniciales.carets_h2[index][0];
+    let booleano = Settings.valores_iniciales.carets_h2[index][1];
 
     console.log(element, booleano);
 
     if (booleano) {
-        settings.valores_iniciales.carets_h2[index][1] = false;
-        Array.from(settings.doms.h2Carets)[index].className = 'fa fa-caret-down';
-        settings.doms[element][index].style.animation = 'ocultarLenguajes 2s 1 forwards';
+        Settings.valores_iniciales.carets_h2[index][1] = false;
+        Array.from(Settings.doms.h2Carets)[index].className = 'fa fa-caret-down';
+        Settings.doms[element][index].style.animation = 'ocultarLenguajes 1s 1 forwards';
     
     } else {
-        settings.valores_iniciales.carets_h2[index][1] = true;
-        Array.from(settings.doms.h2Carets)[index].className = 'fa fa-caret-up';
-        settings.doms[element][index].style.animation = 'mostrarLenguajes 4s 1 forwards';
+        Settings.valores_iniciales.carets_h2[index][1] = true;
+        Array.from(Settings.doms.h2Carets)[index].className = 'fa fa-caret-up';
+        Settings.doms[element][index].style.animation = 'mostrarLenguajes 2s 1 forwards';
     }
 }
 
 // =================================================================================
+//  Acciones botones-carrusel: desplazar los elementos a izda y dcha
+// ---------------------------------------------------------------------------------
 function acciones_botonesCarrusel(ev, index, elemento, desplazamiento) {
 
-    // elemento = botones-carrusel
-    // element = elementos carrusel moviles
+    // elemento => botones-carrusel
+    // element ==> elementos carrusel moviles
 
     console.log(ev.target.id, '...click');
     const idBoton = ev.target.id;
 
     console.log(elemento.className);
 
-    let element = settings.doms.h2Contenedor[index];
+    let element = Settings.doms.h2Contenedor[index];
     element = Array.from(element.childNodes);
     console.log(element);
 
@@ -87,7 +73,6 @@ function acciones_botonesCarrusel(ev, index, elemento, desplazamiento) {
 
             element.style.left = `${posActual.toString()}%`;
         }
-
     });
 }
 
@@ -100,8 +85,23 @@ function ver_mas(ev) {
     if (target === '#') console.log('####');
 }
 
+// =================================================================================
+function carga_misLenguajes_imagenes() {
+
+    for (let i = 0; i < Settings.mis_lenguajesImg.length; i ++) {
+
+        const archivoImg = Settings.mis_lenguajesImg[i];
+
+        const lenguajeImg = document.createElement('img');
+        lenguajeImg.setAttribute('class', 'iconos-lenguajes');
+        lenguajeImg.src = archivoImg;
+
+        Settings.doms.iconos_lenguajesContainer.appendChild(lenguajeImg);
+    }
+}
+
 export {
-    carga_misLenguajes_imagenes,
+    // carga_misLenguajes_imagenes,
     ver_mas,
     acciones_h2Carets,
     acciones_botonesCarrusel,
