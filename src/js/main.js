@@ -3,24 +3,31 @@
 // 
 // =================================================================================
 import { Settings } from './constants.js';
-import { crearElementos_fetchingJson } from './fetching-iter.js';
+import { recibeInfo_proyectos } from './fetching-ini.js';
 
 import {
     // carga_misLenguajes_imagenes,
-    ver_mas,
     acciones_h2Carets,
     acciones_botonesCarrusel
 } from "./functions.js";
 
 // =================================================================================
+//  Inicio (window.onload)
+// ---------------------------------------------------------------------------------
 window.onload = () => {
 
     recibeInfo_proyectos();
     // carga_misLenguajes_imagenes();
+    crear_eventos_caretsMostrarOcultar();
+    crear_eventos_botonesCarrusel();
+    actualizar_botonesCarrusel_visibleHidden();
+}
 
-    // -------------------------------------------------------------------
-    // Carets ^ (Acciones mostrar-ocultar los proyectos, etc.)
-    // -------------------------------------------------------------------
+// ===================================================================
+// Carets ^ (Acciones mostrar-ocultar los proyectos, etc.)
+// -------------------------------------------------------------------
+function crear_eventos_caretsMostrarOcultar() {
+
     console.log(Array.from(Settings.doms.h2Carets));
 
     Array.from(Settings.doms.h2Click).forEach((h2Click, index) => {
@@ -29,12 +36,15 @@ window.onload = () => {
             acciones_h2Carets(ev, index, h2Click);
         });
     });
+}
 
-    // -------------------------------------------------------------------
-    // Botones Carrusel:
-    //      settings.doms.botonesCarrusel ===> boton izquierdo
-    //      settings.doms.botonesCarruselDe => boton derecho
-    // -------------------------------------------------------------------
+// ===================================================================
+// Botones Carrusel:
+//      settings.doms.botonesCarrusel ===> boton izquierdo
+//      settings.doms.botonesCarruselDe => boton derecho
+// -------------------------------------------------------------------
+function crear_eventos_botonesCarrusel() {
+
     const desplazamiento = Settings.offSetHorizontalElementos; // (40% mover a izda dcha)
 
     Array.from(Settings.doms.botonesCarrusel).forEach((botonClick, index) => {
@@ -54,12 +64,17 @@ window.onload = () => {
             acciones_botonesCarrusel(ev, indice, botonClick, desplazamiento);
         });
     });
+}
 
-    // -----------------------------------------------------------------------------
-    //  Actualizar los botones Carrusel:
-    //      - 'visible' -> ponerlos 'hidden' si ya no hay mas elementos...
-    //      - (Primero el boton derecho y despues el izquierdo)
-    // -----------------------------------------------------------------------------
+// =============================================================================
+//  Actualizar los botones Carrusel:
+//      - 'visible' -> ponerlos 'hidden' si ya no hay mas elementos...
+//      - (Primero el boton derecho y despues el izquierdo)
+// -----------------------------------------------------------------------------
+function actualizar_botonesCarrusel_visibleHidden() {
+
+    const desplazamiento = Settings.offSetHorizontalElementos; // (40% mover a izda dcha)
+    
     setInterval(() => {
 
         Array.from(Settings.doms.botonesCarruselDe).forEach((botonClick, index) => {
@@ -99,58 +114,4 @@ window.onload = () => {
         });
 
     }, 200);
-}
-
-// =================================================================================
-//  Fetching info tarjetas proyectos
-//  
-// ---------------------------------------------------------------------------------
-const recibeInfo_proyectos = async () => {
-
-    // const endpoint = './src/json/proyectos.json';
-
-    try {
-        const response = await fetch(Settings.endpoint, {cache: 'no-cache'});
-        console.log(response);
-
-        if (response.ok) {
-            const jsonResponse = await response.json();
-            console.log(jsonResponse);
-
-            //funcion para mostrar la informacion
-            muestraResultados(jsonResponse);
-        }
-
-    } catch (error) {
-        console.log(error);
-    }
-}
-
-// ----------------------------------------------------------------------------------
-const muestraResultados = (response) => {
-
-    console.log(response);
-
-    let contador = 999;
-    let opcionIndex = 0;
-    const navbar_opciones = Object.keys(response);
-    
-    for (let opcionElegida of navbar_opciones) {
-        
-        let x = -Settings.offSetHorizontalElementos;
-        opcionIndex ++;
-
-        for (let i of response[opcionElegida]) {
-
-            contador --;
-            x += Settings.offSetHorizontalElementos;
-
-            const tarjeta = crearElementos_fetchingJson(i, contador, x, opcionIndex);
-            Settings.doms.h2Contenedor[opcionIndex].appendChild(tarjeta);
-            
-            tarjeta.addEventListener('click', (ev) => {
-                ver_mas(ev);
-            });
-        }
-    }
 }

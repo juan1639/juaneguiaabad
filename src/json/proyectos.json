@@ -33,6 +33,14 @@
             "descripcion": "Juego Conecta4 (cuatro en raya) hecho en JavaScript con CSS"
         },
         {
+            "nombre": "DonkeyJon-Phaser",
+            "imagen": "./src/img/miniatura_DonkeyJon_phaser.png",
+            "githubURL": "https://github.com/juan1639/DonkeyJon-phaser",
+            "url": "https://juan1639.github.io/DonkeyJon-phaser",
+            "lenguaje": "./src/img/javascript-1.svg",
+            "descripcion": "Una versión del juego clásico DonkeyKong, usando la librería Phaser"
+        },
+        {
             "nombre": "DonkeyJon",
             "imagen": "./src/img/miniatura_DonkeyJon.png",
             "githubURL": "https://github.com/juan1639/DonkeyJon",
@@ -47,6 +55,14 @@
             "url": "https://juan1639.github.io/Galaximi2",
             "lenguaje": "./src/img/javascript-1.svg",
             "descripcion": "Recreación de un juego clásico tipo Galaxian, Space Invaders, etc. hecha en JavaScript vanilla, usando sólo la etiqueta canvas"
+        },
+        {
+            "nombre": "FlappyBird",
+            "imagen": "./src/img/miniatura-flappy.png",
+            "githubURL": "https://github.com/juan1639/FlappyBird",
+            "url": "https://juan1639.github.io/FlappyBird",
+            "lenguaje": "./src/img/javascript-1.svg",
+            "descripcion": "Una versión del viral juego FlappyBird"
         },
         {
             "nombre": "JBlack Jack",
