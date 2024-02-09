@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100vw;
+    min-height: 100vh;
+    height: fit-content;
+}
+
+body {
+    background: url('../../img/fondo-azulOscuro.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2%;
+}
+
+figure {
+    background: inherit;
+    display: inherit;
+    flex-direction: inherit;
+    align-items: center;
+    font-size: 12px;
+    color: aquamarine;
+}
+
+img {
+    width: 50%;
+}

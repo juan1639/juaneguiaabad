@@ -14,7 +14,8 @@ export class Settings {
         h2Carets: document.getElementsByClassName('fa'),
         sliderControls: document.getElementsByClassName('sliderControls'),
         botonesCarrusel: document.getElementsByClassName('boton-carrusel iz'),
-        botonesCarruselDe: document.getElementsByClassName('boton-carrusel de')
+        botonesCarruselDe: document.getElementsByClassName('boton-carrusel de'),
+        tituloanchor: document.getElementsByClassName('titulo')
     };
 
     static valores_iniciales = {
