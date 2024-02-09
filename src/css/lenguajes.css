@@ -63,7 +63,7 @@
     height: 100%;
     transform-origin: center;
     transform-style: preserve-3d;
-    transform: rotateY(calc(var(--i) * 40deg)) translateZ(400px);
+    transform: rotateY(calc(var(--i) * 36deg)) translateZ(400px);
 }
   
 .slider figure img {

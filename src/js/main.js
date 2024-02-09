@@ -39,7 +39,7 @@ function crear_eventos_caretsMostrarOcultar() {
 }
 
 // ===================================================================
-// Botones Carrusel:
+//  Botones Carrusel:
 //      settings.doms.botonesCarrusel ===> boton izquierdo
 //      settings.doms.botonesCarruselDe => boton derecho
 // -------------------------------------------------------------------

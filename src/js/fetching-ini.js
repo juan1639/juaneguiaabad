@@ -22,7 +22,7 @@ const recibeInfo_proyectos = async () => {
         }
 
     } catch (error) {
-        console.log(error);
+        console.warn(error);
     }
 }
 
